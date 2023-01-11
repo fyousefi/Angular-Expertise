@@ -1,5 +1,7 @@
 # AngularTestAndDesignForTestability
 
+There should be no doubt about how important it is to thoroughly test the applications we develop. I would even say that the word is not “important,” but “essential."
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
 
 ## Development server
