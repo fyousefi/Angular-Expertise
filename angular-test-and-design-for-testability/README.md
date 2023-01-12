@@ -1,4 +1,4 @@
-# AngularTestAndDesignForTestability
+# Angular Test And Design For Testability
 
 There should be no doubt about how important it is to thoroughly test the applications we develop. I would even say that the word is not “important,” but “essential."
 
