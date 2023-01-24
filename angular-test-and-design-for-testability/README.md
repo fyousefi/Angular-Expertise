@@ -2,6 +2,8 @@
 
 There should be no doubt about how important it is to thoroughly test the applications we develop. I would even say that the word is not “important,” but “essential."
 
+In this chapter, we will see the tools that Angular offers developers to perform unit tests, and we will build suites with specs to test `classes`, `pipes`, and `services`.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
 
 ## Development server
