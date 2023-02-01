@@ -28,4 +28,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
+In this project, I've enabled the angular analytics usage data. Should you not want to share usage data about this project with the Angular Team at Google under [Google's Privacy Policy](https://policies.google.com/privacy) the following command will disable this feature entirely:
+
+`ng analytics disable`
+
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
