@@ -12,10 +12,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-test-and-design-for-testability'`, () => {
+  it(`should have as title 'Angular Test And Design For Testability'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-test-and-design-for-testability');
+    expect(app.title).toEqual('Angular Test And Design For Testability');
   });
 
   it('should render title', () => {
