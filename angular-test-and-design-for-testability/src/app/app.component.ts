@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-test-and-design-for-testability';
+  title = 'Angular Test And Design For Testability';
 }
