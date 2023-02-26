@@ -22,6 +22,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-test-and-design-for-testability app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Angular Test And Design For Testability app is running!');
   });
 });
