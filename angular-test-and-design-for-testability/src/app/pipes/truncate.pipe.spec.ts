@@ -6,12 +6,12 @@ describe('TruncatePipe', () => {
     expect(pipe).toBeTruthy();
   });
 
-  it('should truncate a string to 10 characters', () => {
+  it('should truncate a string to 10 characters plus an ellipses', () => {
     //create instance
     const pipe = new TruncatePipe();
     //pass params
-    const ret: any = pipe.transform('abcdefghijklmnopq', 10);
+    const ret: any = pipe.transform('abcdefghijklmnopq', 10, '...');
     //assert
-    expect(ret.length).toBe(10);
+    expect(ret).toEqual('abcdefghij...')
   });
 });
