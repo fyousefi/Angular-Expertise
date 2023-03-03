@@ -13,4 +13,10 @@ describe('AuthService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('should authenticate the user', () => {
+    const service: AuthService = TestBed.get(AuthService);
+    localStorage.setItem('currentUser', 'admin');
+    expect(service.isAuthenticated()).toBeTruthy();
+  });
 });
