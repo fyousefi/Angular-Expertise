@@ -11,5 +11,13 @@ export class AuthService {
 
   logout() {}
 
-  isAuthenticated() {}
+  isAuthenticated() {
+    const currentUser = localStorage.getItem('currentUser');
+
+    if(currentUser){
+        return true;
+    }
+
+    return false;
+  }
 }
