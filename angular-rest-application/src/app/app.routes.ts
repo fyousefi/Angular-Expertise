@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponents } from './components/about/about.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './compponents/contact/contact.component';
 
 const ROUTES: Routes = [
     { path: '', component: HomeComponent },
