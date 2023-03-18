@@ -8,4 +8,6 @@ import { ReqresService } from 'src/app/services/reqres.service';
 })
 export class HomeComponent {
 
+    constructor(private reqresService: ReqresService) {}
+
 }
