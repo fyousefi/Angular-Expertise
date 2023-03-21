@@ -11,6 +11,15 @@ export class HomeComponent {
 
     constructor(private reqresService: ReqresService) {}
 
-
+    getUser() {
+        this.reqresService.getUsers().subscribe(
+            (res: User[]) => {
+                console.log(res);
+            },
+            (err) => {
+                console.log(err);
+            }
+        );
+    }
 
 }
