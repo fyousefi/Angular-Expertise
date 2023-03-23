@@ -6,5 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ReqresService {
 
+  private url = 'api/users';
+
   constructor(private http: HttpClient) { }
 }
