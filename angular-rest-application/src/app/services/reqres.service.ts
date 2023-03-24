@@ -12,5 +12,7 @@ export class ReqresService {
 
   constructor(private http: HttpClient) { }
 
-
+  getUsers() : Observable<User[]> {
+    return this.http.get<User[]>(this.url);
+  }
 }
