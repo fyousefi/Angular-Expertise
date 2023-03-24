@@ -9,7 +9,9 @@ import { User } from 'src/app/user';
 })
 export class HomeComponent {
 
-    constructor(private reqresService: ReqresService) {}
+    constructor(private reqresService: ReqresService) {
+        this.getUser();
+    }
 
     getUser() {
         this.reqresService.getUsers().subscribe(
