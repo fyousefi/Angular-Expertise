@@ -9,6 +9,8 @@ import { User } from 'src/app/user';
 })
 export class HomeComponent {
 
+    users: User[] = [];
+
     constructor(private reqresService: ReqresService) {
         this.getUser();
     }
