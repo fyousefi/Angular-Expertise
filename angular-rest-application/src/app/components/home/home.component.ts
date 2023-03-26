@@ -18,7 +18,7 @@ export class HomeComponent {
     getUser() {
         this.reqresService.getUsers().subscribe(
             (res: User[]) => {
-                console.log(res);
+                this.users = res;
             },
             (err) => {
                 console.log(err);
