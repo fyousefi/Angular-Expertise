@@ -12,3 +12,8 @@ ul li {
     display: grid;
     grid-template-columns: 60px auto;
 }
+
+ul li p {
+    font-weight: bold;
+    margin-left: 20px;
+}
