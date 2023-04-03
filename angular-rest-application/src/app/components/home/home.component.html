@@ -2,5 +2,9 @@
     <li *ngFor="let user of users">
         <img [src]="user.avatar" alt="">
         <p>{{user.first_name}} {{user.last_name}}</p>
+
+        <div style="padding-top: 5px; width: 18rem;">
+            <button class="btn btn-outline-primary btn-sm" (click)="userDetails(user.id)"></button>
+        </div>
     </li>
 </ul>
