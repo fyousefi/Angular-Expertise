@@ -26,4 +26,8 @@ export class HomeComponent {
         );
     }
 
+    userDetails(id: number) {
+        console.log('User id:', id);
+    }
+
 }
