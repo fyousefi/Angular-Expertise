@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { UserDetailComponent } from './components/user/user-detail.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ContactComponent } from './components/contact/contact.component';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
