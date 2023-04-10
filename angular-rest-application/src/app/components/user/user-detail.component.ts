@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { ReqresService } from 'src/app/services/reqres.service';
 
 @Component({
