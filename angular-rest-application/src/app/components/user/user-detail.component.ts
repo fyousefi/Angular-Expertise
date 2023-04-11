@@ -9,4 +9,6 @@ import { ReqresService } from 'src/app/services/reqres.service';
 })
 export class UserDetailComponent {
 
+    constructor() {}
+
 }
