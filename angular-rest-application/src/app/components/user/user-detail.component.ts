@@ -10,7 +10,8 @@ import { ReqresService } from 'src/app/services/reqres.service';
 export class UserDetailComponent {
 
     constructor(
-        private activatedRoute: ActivatedRoute
+        private activatedRoute: ActivatedRoute,
+        private reqresService: ReqresService
     ) {}
 
 }
