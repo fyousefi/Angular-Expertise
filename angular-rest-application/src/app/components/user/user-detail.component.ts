@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ReqresService } from 'src/app/services/reqres.service';
+import { User } from 'src/app/user';
 
 @Component({
   selector: 'app-user-detail',
@@ -8,6 +9,8 @@ import { ReqresService } from 'src/app/services/reqres.service';
   styleUrls: ['./user-detail.component.css']
 })
 export class UserDetailComponent {
+
+    
 
     constructor(
         private activatedRoute: ActivatedRoute,
