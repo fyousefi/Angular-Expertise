@@ -10,7 +10,12 @@ import { User } from 'src/app/user';
 })
 export class UserDetailComponent {
 
-    
+    user: User = {
+        id: 0,
+        first_name: '',
+        last_name: '',
+        avatar: ''
+    };
 
     constructor(
         private activatedRoute: ActivatedRoute,
