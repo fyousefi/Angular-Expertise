@@ -29,7 +29,9 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
         InMemoryDataService, {dataEncapsulation: false}
-    )
+    ),
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
