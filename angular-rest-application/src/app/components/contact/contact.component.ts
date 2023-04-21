@@ -10,7 +10,7 @@ export class ContactComponent implements OnInit {
 
   messageForm: FormGroup;
   submitted = false;
-
+  success = false;
 
   constructor(){}
 
