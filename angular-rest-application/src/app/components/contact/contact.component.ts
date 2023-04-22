@@ -12,7 +12,7 @@ export class ContactComponent implements OnInit {
   submitted = false;
   success = false;
 
-  constructor(){}
+  constructor(private formBuilder: FormBuilder){}
 
   ngOnInit() {
       
