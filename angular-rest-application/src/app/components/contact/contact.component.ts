@@ -19,6 +19,16 @@ export class ContactComponent implements OnInit {
     });
   }
 
+  onSubmit() {
+    this.submitted = true;
+
+    if(this.messageForm.invalid) {
+      return;
+    }
+
+    this.success = true;
+  }
+
   ngOnInit() {
       
   }
