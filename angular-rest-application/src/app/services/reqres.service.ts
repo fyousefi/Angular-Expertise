@@ -22,7 +22,11 @@ export class ReqresService {
 
   getUser(id: number): Observable<User> {
     const url = `${this.url}/${id}`;
-    return this.http.get<User>(url);
+
+    return this.http.get<User>(url)
+    .pipe(
+      catchError(this.handleError<User>(`getUser id=${id}`))
+    );
   }
 
   private handleError<T>(operation = 'operation', result?: T): any {
