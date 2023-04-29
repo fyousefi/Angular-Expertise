@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ReqresService } from 'src/app/services/reqres.service';
 import { User } from 'src/app/user';
 
@@ -26,10 +26,10 @@ export class UserDetailComponent implements OnInit {
       });
     }
 
-  save(): void {
-    this.reqresService.updateUser(this.user)
-        .subscribe(() => this.router.navigate(['users']));
-  }
+    save(): void {
+      this.reqresService.updateUser(this.user)
+          .subscribe(() => this.router.navigate(['users']));
+    }
 
     ngOnInit() {}
 
