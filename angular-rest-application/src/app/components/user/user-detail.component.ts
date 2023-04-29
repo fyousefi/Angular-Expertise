@@ -19,7 +19,8 @@ export class UserDetailComponent implements OnInit {
 
     constructor(
         private activatedRoute: ActivatedRoute,
-        private reqresService: ReqresService
+        private reqresService: ReqresService,
+        private router: Router
     ) {
       this.activatedRoute.params.subscribe((params) => {
         reqresService.getUser(params['id']).subscribe((res: User) => this.user = res);
