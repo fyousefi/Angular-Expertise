@@ -34,6 +34,13 @@ export class ReqresService {
     );
   }
 
+  updateUser(user: User): any {
+    return this.http.put(this.url, user, this.httpOptions)
+      .pipe(
+        catchError(this.handleError<User>(`updateUser`))
+      );
+  }
+
   private handleError<T>(operation = 'operation', result?: T): any {
     return (error: any): Observable<T> => {
 
