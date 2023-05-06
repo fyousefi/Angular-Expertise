@@ -12,5 +12,6 @@ import { User } from 'src/app/user';
   styleUrl: './user-add.component.css'
 })
 export class UserAddComponent {
+  userForm: FormGroup;
 
 }
