@@ -13,5 +13,5 @@ import { User } from 'src/app/user';
 })
 export class UserAddComponent {
   userForm: FormGroup;
-
+  submitted = false;
 }
