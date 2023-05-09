@@ -16,6 +16,7 @@ export class UserAddComponent {
   submitted = false;
 
   constructor(){
+    private formBuilder: FormBuilder
     
   }
 }
