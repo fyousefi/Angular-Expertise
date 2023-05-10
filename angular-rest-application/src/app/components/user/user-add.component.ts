@@ -16,7 +16,8 @@ export class UserAddComponent {
   submitted = false;
 
   constructor(){
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private reqresService: ReqresService
     
   }
 }
