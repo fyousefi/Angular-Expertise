@@ -17,7 +17,8 @@ export class UserAddComponent {
 
   constructor(){
     private formBuilder: FormBuilder,
-    private reqresService: ReqresService
+    private reqresService: ReqresService,
+    private router:Router
     
   }
 }
