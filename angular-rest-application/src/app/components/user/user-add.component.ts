@@ -15,10 +15,11 @@ export class UserAddComponent {
   userForm: FormGroup;
   submitted = false;
 
-  constructor(){
+  constructor(
     private formBuilder: FormBuilder,
     private reqresService: ReqresService,
     private router:Router
-    
+  ){
+
   }
 }
