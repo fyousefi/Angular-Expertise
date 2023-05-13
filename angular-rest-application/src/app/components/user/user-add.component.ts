@@ -20,6 +20,8 @@ export class UserAddComponent {
     private reqresService: ReqresService,
     private router:Router
   ){
+    this.userForm = this.formBuilder.group({
 
+    });
   }
 }
