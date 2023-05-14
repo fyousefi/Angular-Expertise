@@ -21,7 +21,7 @@ export class UserAddComponent {
     private router:Router
   ){
     this.userForm = this.formBuilder.group({
-
+      first_name: ['', Validators.required]
     });
   }
 }
