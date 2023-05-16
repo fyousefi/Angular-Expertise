@@ -25,4 +25,6 @@ export class UserAddComponent {
       last_name: ['', Validators.required]
     });
   }
+
+  get f(): any { return this.userForm.controls; }
 }
