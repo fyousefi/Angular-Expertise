@@ -30,5 +30,9 @@ export class UserAddComponent {
 
   onSubmit(): void {
     this.submitted = true;
+
+    if(this.userForm.invalid) {
+      return;
+    }
   }
 }
