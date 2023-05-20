@@ -34,5 +34,7 @@ export class UserAddComponent {
     if(this.userForm.invalid) {
       return;
     }
+
+    const avatar = 'assets/img/user.jpg';
   }
 }
