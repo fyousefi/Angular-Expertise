@@ -38,5 +38,7 @@ export class UserAddComponent {
     const avatar = 'assets/img/user.jpg';
 
     const first_name: string = this.f.first_name.value;
+
+    const last_name: string = this.f.last_name.value;
   }
 }
