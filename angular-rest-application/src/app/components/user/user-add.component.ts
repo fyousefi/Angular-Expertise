@@ -40,5 +40,8 @@ export class UserAddComponent {
     const first_name: string = this.f.first_name.value;
 
     const last_name: string = this.f.last_name.value;
+
+    this.reqresService.addUser({ first_name, last_name, avatar } as User)
+      .subscribe(()=> this.router.navigate(['users']));
   }
 }
