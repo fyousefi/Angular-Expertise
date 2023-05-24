@@ -41,6 +41,13 @@ export class ReqresService {
       );
   }
 
+  addUser(user: User): Observable<User> {
+    return this.http.post<User>(this.url, user, this.httpOptions)
+      .pipe(
+        catchError(this.handleError<User>(`AddUser`))
+      );
+  }
+
   private handleError<T>(operation = 'operation', result?: T): any {
     return (error: any): Observable<T> => {
 
