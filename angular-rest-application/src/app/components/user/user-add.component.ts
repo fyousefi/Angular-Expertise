@@ -11,7 +11,8 @@ import { User } from 'src/app/user';
   templateUrl: './user-add.component.html',
   styleUrl: './user-add.component.css'
 })
-export class UserAddComponent {
+export class UserAddComponent implements OnInit {
+  
   userForm: FormGroup;
   submitted = false;
 
