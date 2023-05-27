@@ -12,7 +12,7 @@ import { User } from 'src/app/user';
   styleUrl: './user-add.component.css'
 })
 export class UserAddComponent implements OnInit {
-  
+
   userForm: FormGroup;
   submitted = false;
 
@@ -25,6 +25,10 @@ export class UserAddComponent implements OnInit {
       first_name: ['', Validators.required],
       last_name: ['', Validators.required]
     });
+  }
+
+  ngOnInit(): void {
+      
   }
 
   get f(): any { return this.userForm.controls; }
