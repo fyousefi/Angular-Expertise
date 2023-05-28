@@ -12,6 +12,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { UserDetailComponent } from './components/user/user-detail.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { UserAddComponent } from './components/user/user-add.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    UserDetailComponent
+    UserDetailComponent,
+    UserAddComponent
   ],
   imports: [
     BrowserModule,
