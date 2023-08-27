@@ -12,7 +12,10 @@ export class HomeComponent {
 
     users: User[] = [];
 
-    constructor(private reqresService: ReqresService) {
+    constructor(
+        private reqresService: ReqresService,
+        private router: Router
+        ) {
         this.getUser();
     }
 
