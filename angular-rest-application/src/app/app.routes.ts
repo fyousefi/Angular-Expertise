@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [
+const ROUTES: Routes = [
     { path: '', component: HomeComponent },
     { path: 'path', component: FeatureComponent },
     { path: '**', component: PageNotFoundComponent },
