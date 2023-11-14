@@ -20,6 +20,10 @@ export class UserDetailComponent {
     constructor(
         private activatedRoute: ActivatedRoute,
         private reqresService: ReqresService
-    ) {}
+    ) {
+      this.activatedRoute.params.subscribe((params) => {
+        reqresService.getUser(params['id']).subscribe((res: User) => this.user = res);
+      });
+    }
 
 }
