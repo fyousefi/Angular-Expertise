@@ -14,7 +14,10 @@ export class ReqresService {
   constructor(private http: HttpClient) { }
 
   getUsers() : Observable<User[]> {
-    return this.http.get<User[]>(this.url);
+    return this.http.get<User[]>(this.url)
+      .pipe(
+        catchError(this.handleError<User[]>('getUsers', []))
+      );
   }
 
   getUser(id: number): Observable<User> {
