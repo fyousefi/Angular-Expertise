@@ -24,4 +24,15 @@ export class ReqresService {
     const url = `${this.url}/${id}`;
     return this.http.get<User>(url);
   }
+
+  private handleError<T>(operation = 'operation', result?: T):any {
+    return(error: any): Observable<T> => {
+      
+      // TODO: send the error to remote logging infrastructure
+      console.log(error);
+
+      // Let the app keep running by returning an empty result
+      return of(result as T);
+    };
+  }
 }
