@@ -26,6 +26,11 @@ export class UserDetailComponent implements OnInit {
       });
     }
 
+  save(): void {
+    this.reqresService.updateUser(this.user)
+        .subscribe(() => this.router.navigate(['users']));
+  }
+
     ngOnInit() {}
 
 }
