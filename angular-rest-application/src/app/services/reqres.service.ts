@@ -1,7 +1,8 @@
-import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { User } from '../user';
+
 import { catchError, map } from 'rxjs/operators';
 
 @Injectable({
@@ -12,8 +13,8 @@ export class ReqresService {
   private url = 'api/users';
 
   httpOptions = {
-    headers: new HttpHeaders({  })
-  }
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
 
   constructor(private http: HttpClient) { }
 
