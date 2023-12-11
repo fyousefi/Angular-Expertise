@@ -18,11 +18,29 @@ export class ReqresService {
   constructor(private http: HttpClient) { }
 
   getUsers() : Observable<User[]> {
-    return this.http.get<User[]>(this.url);
+    return this.http.get<User[]>(this.url)
+      .pipe(
+        catchError(this.handleError<User[]>('getUsers', []))
+      );
   }
 
   getUser(id: number): Observable<User> {
     const url = `${this.url}/${id}`;
-    return this.http.get<User>(url);
+
+    return this.http.get<User>(url)
+    .pipe(
+      catchError(this.handleError<User>(`getUser id=${id}`))
+    );
+  }
+
+  private handleError<T>(operation = 'operation', result?: T): any {
+    return (error: any): Observable<T> => {
+
+        // TODO: send the error to remote logging infrastructure
+        console.error(error); // log to console instead
+
+        // Let the app keep running by returning an empty result.
+        return of(result as T);
+    };
   }
 }
